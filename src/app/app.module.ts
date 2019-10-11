@@ -1,16 +1,18 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppComponent } from './app.component';
+import { AppContainerComponent } from './appContainer.component';
+import { SlidePopupComponent } from './slide-popup/slide-popup.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppContainerComponent,
+    SlidePopupComponent
   ],
   imports: [
     BrowserModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppContainerComponent]
 })
 export class AppModule { }
